@@ -1,0 +1,13 @@
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto-card {
+width: 15rem;
+
+}
+#productos {
+    padding: 3rem;
+}

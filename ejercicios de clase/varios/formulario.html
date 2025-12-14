@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="">
+
+    </form>
+    <form action="URL_de_destino" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Motivo y Mensaje</legend>
+
+            <label for="motivo">Motivo:</label>
+            <select id="motivo" name="motivo">
+                <option value="">-- Seleccioná una opción --</option>
+                <option value="consulta">Consulta</option>
+                <option value="soporte">Soporte</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+        </fieldset>
+
+        <section>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </section>
+    </form>
+
+</body>
+
+</html>

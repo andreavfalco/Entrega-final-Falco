@@ -1,0 +1,40 @@
+/* Márgenes generales para los elementos de bloque más usados */
+body, h1, h2, h3, p, section, form, table, iframe {
+    margin: 20px 0; /* 20px arriba y abajo, nada a los lados */
+}
+
+h2 {
+    color: blue;
+}
+
+.texto--resaltado {
+    background-color: yellow;
+}
+
+#seccion--textos {
+   /* background-color: beige;*/
+   background-image: url("./logo.png");
+}
+
+.texto--negrita {
+    font-weight: 800;
+}
+
+.header--pagina {
+    background-color: coral;
+    font-size: 32px;
+}
+
+.footer--pagina {
+    background-color: gray;
+    color: white;
+    font-size: 28px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
