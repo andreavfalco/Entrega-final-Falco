@@ -1,0 +1,44 @@
+[
+  {
+    "id": 101,
+    "categoria": "2agujas",
+    "titulo": "Chaleco lana semigruesa",
+    "precio": 18000,
+    "imagen": "./imagenes/2 agujas/chaleco lana semigruesa.jpeg"
+  },
+  {
+    "id": 102,
+    "categoria": "2agujas",
+    "titulo": "Sweter polera chenille",
+    "precio": 22000,
+    "imagen": "./Imagenes/2 agujas/Sweter polera chenille.jpeg"
+  },
+  {
+    "id": 103,
+    "categoria": "2agujas",
+    "titulo": "Sweter fantasia matizada",
+    "precio": 20000,
+    "imagen": "./Imagenes/2 agujas/Lana gruesa fantasia 2agu.jpeg"
+  },
+  {
+    "id": 201,
+    "categoria": "crochet",
+    "titulo": "Chaleco manguero de hilo",
+    "precio": 22000,
+    "imagen": "./Imagenes/crochet/Chaleco manguero hilo crochet.jpeg"
+  },
+  {
+    "id": 202,
+    "categoria": "crochet",
+    "titulo": "Remera de hilo",
+    "precio": 15000,
+    "imagen": "./Imagenes/crochet/Remera hilo.jpeg"
+  },
+  {
+    "id": 203,
+    "categoria": "crochet",
+    "titulo": "Chaleco manga 3/4",
+    "precio": 12000,
+    "imagen": "./Imagenes/crochet/Chaleco manga 3-4.jpeg"
+  }
+]

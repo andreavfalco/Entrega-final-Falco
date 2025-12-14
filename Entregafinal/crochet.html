@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colección Dos Agujas - Tejidos Adry</title>
+    <title>Colección Crochet - Tejidos Adry</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style-dosagujas.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styleglobal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body data-categoria="crochet">
 
     <header class="header--pagina">
         <img src="./Imagenes/logos/Logo.jpg" alt="Logo" class="logo">
@@ -32,35 +33,23 @@
     </header>
 
     <main>
+         <section> <div id="inicio"></div> </section> 
+         
         <section class="hero-banner">
             <div class="hero-overlay"></div>
-            <img src="./Imagenes/2 agujas/Sweter polera chenille.jpeg" alt="Banner tejido" class="hero-img">
-            <h2>Colección Dos Agujas</h2>
+            <img src="./Imagenes/banner/banner2.jpeg" alt="Banner tejido" class="hero-img">
+            <h2>Colección Crochet</h2>
             <p class="descripcion">Cada pieza está elaborada a mano con dedicación y materiales de excelente calidad 💜
             </p>
         </section>
 
 
-
         <section id="productos" class="productos-detalle">
 
             <h2>Productos</h2>
-            <div class="productos-container">
-                <div class="card">
-                    <img src="./Imagenes/2 agujas/Chaleco lana semigruesa 2 agujas (1).jpeg" alt="Chaleco lana">
-                    <h3>Chaleco de lana semigruesa</h3>
-                </div>
-                <div class="card">
-                    <img src="./Imagenes/2 agujas/Sweter polera chenille.jpeg" alt="Sweter">
-                    <h3>Sweter polera de lana chenille</h3>
-                </div>
-                <div class="card">
-                    <img src="./Imagenes/2 agujas/Lana gruesa fantasia 2agu.jpeg" alt="Sweter lana">
-                    <h3>Sweter de lana gruesa fantasía matizada</h3>
-                </div>
+            <div id="productos-grid" class="productos-container row"></div>
             </div>
         </section>
-
 
         </section>
 
@@ -70,9 +59,35 @@
         <a href="https://www.instagram.com/tejidos.adry/" target="_blank" class="instagram">
             <i class="fab fa-instagram"></i>
         </a>
-        <p>&copy; 2025 Tejidos Adry. Todos los derechos reservados</p>
+        <p>&copy; 2025 Tejidos Adry. Todos los derechos reservados.</p>
     </footer>
 
+<div id="icono-carrito" class="carrito-flotante">
+    🛒
+    <span id="burbuja-carrito">0</span>
+</div>
+<div id="modal-carrito" class="modal-carrito">
+    <div class="modal-contenido carrito-elegante">
+        <button id="cerrar-modal-carrito" class="cerrar">X</button>
+
+        <h2 class="titulo-carrito">Carrito de compras</h2>
+
+        <div id="lista-carrito" class="lista-carrito"></div>
+
+        <hr>
+
+        <div class="totales">
+            <span>Total:</span>
+            <strong id="total-carrito">$0</strong>
+        </div>
+
+        <button class="btn-principal">Iniciar compra</button>
+        <button id="vaciarCarrito" class="btn-secundario">Vaciar carrito</button>
+
+        </div>
+    </div>
+
+    <script src="./preentrega.js"></script>
 </body>
 
 </html>

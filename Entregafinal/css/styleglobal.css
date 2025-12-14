@@ -1,0 +1,610 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  background-color: #faf6ff;
+  color: #4a2c50;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header--pagina {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255,255,255,0.95);
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.nombre-emprendimiento {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.subtitulo-emprendimiento {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a2c50;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8a2be2;
+}
+
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(138,43,226,0.15);
+}
+
+.hero-banner h2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.hero-banner .descripcion {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+.categorias-productos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;  
+  padding: 20px 0;
+}
+
+.btn-ver-productos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-ver-productos:hover {
+  background-color: #6b1db8;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 80px 0;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: 100px;
+}
+
+.card-inicio {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(160, 80, 255, 0.06);
+  overflow: hidden;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 14px;
+  flex: 0 0 280px;
+  height: 240px;
+}
+
+.card-inicio img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card-inicio a {
+  text-decoration: none;
+  color: #8a2be2;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(160, 80, 255, 0.06);
+  overflow: hidden;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 14px;
+  flex: 0 0 280px;
+  height: 420px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(160, 80, 255, 0.12);
+}
+
+.card h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  color: #6a0dad;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.precio {
+  opacity: .7;
+  font-size: 14px;
+}
+
+.btn-agregar {
+  background-color: #c69bdb; 
+  color: white;
+  border: none;
+  padding: 4px 14px; 
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 80;
+  margin-top: 0 auto;
+  width: fit-content;
+  align-self: center;
+}
+
+.btn-agregar:hover {
+  background-color: #8a4fae;
+  transform: scale(1.05);
+}
+
+.btn-quitar {
+    background: #d9b3ff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#resenas {
+  background-color: #f6edff;
+  padding: 60px 20px;
+}
+
+.section-resenas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.resena-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(160,80,255,0.1);
+  max-width: 480px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #6a0dad;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1.5px solid #d9c5f5;
+  border-radius: 8px;
+  background-color: #faf8ff;
+}
+
+textarea { min-height: 100px; }
+
+.footer--pagina {
+  text-align: center;
+  background-color: #e3d1f9;
+  padding: 10px;
+}
+
+.instagram {
+  font-size: 1.8rem;
+  color: #4a2c50;
+  text-decoration: none;
+}
+
+.instagram:hover {
+  color: #8a2be2;
+}
+
+.carrito-flotante {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 55px;
+  height: 55px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#burbuja-carrito {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  background: red;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.modal-contenido {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 0;
+  width: 360px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: -4px 0 20px rgba(0,0,0,.15);
+  position: relative;
+  animation: fadeIn .25s ease-out;
+  font-family: "Dancing Script", cursive;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .header--pagina {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .productos-container {
+    gap: 16px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+.cards-productos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card-inicio {
+  width: 260px;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
+}
+
+.card-inicio:hover {
+  transform: scale(1.05);
+}
+
+.card-inicio img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-link {
+ text-decoration: none;
+ color: #5a3b73
+}
+
+.cards-productos .card-inicio > a,
+.card-inicio a {
+  font-size: 1rem !important; 
+  text-decoration: none !important;
+  color: #5a3b73 !important;
+  line-height: 1.1;
+  display: block;
+  margin-top: 16px;
+}
+
+.modal-carrito {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: flex-end;
+  align-items: stretch;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal-carrito.visible {
+  display: flex;
+}
+
+#cerrar-modal-carrito {
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 0.9rem;
+  color: #8a2be2;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#cerrar-modal-carrito:hover {
+    color: #481277;
+    transform: scale(1.1);
+}
+
+.modal-contenido h2 {
+    font-size: rem;
+    color: #4a067a;
+    margin-bottom: 15px;
+}
+
+.item-carrito {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f7f2ff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.item-carrito img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-info {
+  flex: 1;
+  font-size: 14px;
+}
+
+.item-info .nombre {
+  display: flex;
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  color: #5e3b87;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.item-info .precio {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 4px;
+  color: #5a3b73;
+}
+
+.cantidad-pequena {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #c03737;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.btn-eliminar:hover {
+    background: #f6edff;
+}
+
+#carrito-total {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #5a3b73;
+  display: flex;
+  justify-content: space-between;
+}
+
+botones-carrito {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.titulo-carrito {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 25px;
+  font-family: "Dancing Script", cursive;
+  color: #5b347e;
+}
+.botones-carrito button {
+  padding: 0px 45px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: 0.25s ease;
+}
+.cerrar {
+  border: none;
+  background: none;
+  font-size: 26px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.cerrar:hover {
+  opacity: 1;
+}
+
+.lista-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item-info strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.btn-principal {
+  width: 100%;
+  background: #a48dd8;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn-principal:hover {
+  background: #9477ce;
+}
+
+
+#iniciar-compra {
+  border: none;
+  padding: 10px 45px;
+  border-radius: 10px;
+  background: #d9b3ff;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}

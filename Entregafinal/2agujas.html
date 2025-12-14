@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colección Dos Agujas - Tejidos Adry</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styleglobal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body data-categoria="2agujas">
+    <header class="header--pagina">
+      <img src="./Imagenes/logos/Logo.jpg" alt="Logo" class="logo" />
+
+      <div class="nombre-emprendimiento">
+        Tejidos Adry
+        <div class="subtitulo-emprendimiento">Hechos a mano</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#productos">Productos</a></li>
+          <li><a href="index.html#resenas">Reseñas</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section><div id="inicio"></div></section>
+      <section class="hero-banner">
+        <div class="hero-overlay"></div>
+        <img
+          src="./Imagenes/2 agujas/Sweter polera chenille.jpeg"
+          alt="Banner tejido"
+          class="hero-img"
+        />
+        <h2>Colección Dos Agujas</h2>
+        <p class="descripcion">
+          Cada pieza está elaborada a mano con dedicación y materiales de
+          excelente calidad 💜
+        </p>
+      </section>
+
+      <section id="productos" class="productos-detalle">
+        <h2>Productos</h2>
+        <div id="productos-grid" class="productos-container row"></div>
+      </section>
+    </main>
+
+    <footer class="footer--pagina">
+      <a
+        href="https://www.instagram.com/tejidos.adry/"
+        target="_blank"
+        class="instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <p>&copy; 2025 Tejidos Adry. Todos los derechos reservados</p>
+    </footer>
+
+    <div id="icono-carrito" class="carrito-flotante">
+      🛒
+      <span id="burbuja-carrito">0</span>
+    </div>
+    <div id="modal-carrito" class="modal-carrito">
+      <div class="modal-contenido carrito-elegante">
+        <button id="cerrar-modal-carrito" class="cerrar">X</button>
+
+        <h2 class="titulo-carrito">Carrito de compras</h2>
+
+        <div id="lista-carrito" class="lista-carrito"></div>
+
+        <hr />
+
+        <div class="totales">
+          <span>Total:</span>
+          <strong id="total-carrito">$0</strong>
+        </div>
+
+        <button class="btn-principal">Iniciar compra</button>
+        <button id="vaciarCarrito" class="btn-secundario">
+          Vaciar carrito
+        </button>
+      </div>
+    </div>
+    <script src="./preentrega.js"></script>
+  </body>
+</html>

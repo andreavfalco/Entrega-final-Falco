@@ -8,7 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style-index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styleglobal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -38,8 +39,10 @@
     </header>
 
     <main>
+      <section> <div id="inicio"></div> </section> 
+
       <section class="hero-banner">
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay"></div>  
         <img
           src="./Imagenes/banner/banner1.jpeg"
           alt="Banner tejido"
@@ -48,11 +51,12 @@
         <a href="#productos" class="btn-ver-productos">Ver productos</a>
       </section>
 
+
       <section id="productos">
         <h2>Productos</h2>
-        <div class="categorias-productos">
+        <div class="cards-productos">
           <a href="crochet.html" class="card-link">
-            <div class="card">
+            <div class="card-inicio">
               <div class="image-container">
                 <img src="./Imagenes/logos/crochet.jpg" alt="Tejidos crochet" />
               </div>
@@ -61,7 +65,7 @@
           </a>
 
           <a href="2agujas.html" class="card-link">
-            <div class="card">
+            <div class="card-inicio">
               <div class="image-container">
                 <img
                   src="./Imagenes/logos/2 agujas.jpg"
@@ -98,6 +102,7 @@
         <section>
 
     <form
+    id="contactoFORM"
     class="form-contacto"
     action="https://formspree.io/f/mgvnnzno"
     method="POST"
@@ -118,7 +123,6 @@
     <h1>¿Dónde nos encontramos?</h1>
   </div>
 </section>
-
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26261.325766686907!2d-58.422258606870294!3d-34.637886858688425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1759712664154!5m2!1ses!2sar"
@@ -150,5 +154,33 @@
     </a>
     <p>&copy; 2025 Tejidos Adry. Todos los derechos reservados</p>
 </footer>
+
+<div id="icono-carrito" class="carrito-flotante">
+    🛒
+    <span id="burbuja-carrito">0</span>
+</div>
+<div id="modal-carrito" class="modal-carrito">
+    <div class="modal-contenido carrito-elegante">
+
+        <button id="cerrar-modal-carrito" class="cerrar">X</button>
+
+        <h2 class="titulo-carrito">Carrito de compras</h2>
+
+        <div id="lista-carrito" class="lista-carrito"></div>
+
+    <hr>
+
+    <div class="totales">
+      <span>Total:</span>
+      <strong id="total-carrito">$0</strong>
+    </div>
+
+    <button class="btn-principal">Iniciar compra</button>
+    <button id="vaciarCarrito" class="btn-secundario">Vaciar carrito</button>
+
+  </div>
+</div>
+
+<script src="./preentrega.js"></script>
   </body>
 </html>
